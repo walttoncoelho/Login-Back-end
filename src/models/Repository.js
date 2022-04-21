@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const PerfilUser = new mongoose.Schema(
+const repositorySchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -21,4 +21,4 @@ const PerfilUser = new mongoose.Schema(
   }
 );
 
-export default mongoose.model("User", PerfilUser);
+export default mongoose.model("Repository", repositorySchema);
