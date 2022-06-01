@@ -1,8 +1,10 @@
-import express, { Router } from "express";
+/* import express, { Router } from "express";  */
+const express = require('express')
+const cors = require('cors')
 import cors from "cors";
-
 import routes from './routes';
 import "./database";
+
 
 class App {
   constructor() {
@@ -21,5 +23,6 @@ class App {
     this.server.use(routes);
   }
 }
+
 
 export default new App().server;

@@ -36,7 +36,7 @@ class UsersController {
       if (user) {
         return res
           .status(422)
-          .json({ message: `User ${email} already exists` });
+          .json({ message: `O usuário ${email} já existe` });
       }
 
       // Criptografar a senha usando bcryptjs
